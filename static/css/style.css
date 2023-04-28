@@ -1,0 +1,57 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #2d2d2d;
+    background-image: url('/static/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+}
+
+h1, h4 {
+    color: #2d2d2d;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #e0d7c1;
+    opacity: 0.9;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #b7a290;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #b7a290;
+    border-color: #b7a290;
+}
+
+.btn-primary:hover {
+    background-color: #a48c7e;
+    border-color: #a48c7e;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(183, 162, 144, 0.5);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #4d4d4d;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(183, 162, 144, 0.5);
+}
