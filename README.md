@@ -1,18 +1,80 @@
-sheldon-chatbot
-simple text-based chatbot that uses OpenAI's GPT-3 language model to generate responses to user inputs. The chatbot is designed to simulate the character of Sheldon Cooper from the television show "The Big Bang Theory" Sheldon Cooper Chatbot The Sheldon Cooper Chatbot is a simple text-based chatbot that uses OpenAI's GPT-3 language model to generate responses to user inputs. The chatbot is designed to simulate the character of Sheldon Cooper from the television show "The Big Bang Theory", as it generates responses in the format of "Sheldon Cooper says: [user input] Sheldon Cooper also says: [generated response]".
+# Sheldon Chatbot
 
-Getting Started To get started with the Sheldon Cooper Chatbot, you will need to have Python and Flask installed on your computer. You will also need to sign up for an OpenAI API key to use the GPT-3 language model.
+A chatbot that imitates the speech style and humor of Sheldon Cooper from the popular TV show, The Big Bang Theory.
 
-Once you have these prerequisites installed and set up, you can run the chatbot by navigating to the directory where the app.py file is located and running the following command:
+## Overview
 
-Copy code python app.py This will start the Flask app and allow you to access the chatbot in your web browser.
+Sheldon Chatbot uses the GPT-3 AI model by OpenAI to generate responses that mimic Sheldon Cooper's unique way of speaking, including his catchphrases and humor. The chatbot provides an engaging and entertaining conversational experience for fans of the show.
 
-How It Works The Sheldon Cooper Chatbot is built using Python and Flask, a popular web development framework for Python. The Flask app has two routes - a home page and a chatbot page - and allows users to input text and receive a response from the chatbot. The app uses OpenAI's API key to generate responses from the GPT-3 language model, and also loads a text file containing a list of Sheldon Cooper quotes to use as training data.
+## Features
 
-How To Use It To use the Sheldon Cooper Chatbot, simply open your web browser and navigate to the URL where the Flask app is running. You will be taken to the home page, where you can learn more about the chatbot and how it works.
+- Conversational interface that mimics Sheldon Cooper's speech style
+- Uses catchphrases and humor from the show
+- Built with Python and Flask web framework
+- Integrates with OpenAI's GPT-3 model for generating responses
 
-To access the chatbot, click on the "Chatbot" link in the navigation menu. This will take you to the chatbot page, where you can input text and receive a response from the chatbot.
+## Setup and Installation
 
-When you input text into the chatbot, it will generate a response based on the GPT-3 language model and the training data from the Sheldon Cooper quotes. The response will be displayed on the screen in the format of "Sheldon Cooper says: [user input] Sheldon Cooper also says: [generated response]".
+To set up and run the Sheldon Chatbot, follow these steps:
 
-Contributing If you would like to contribute to the Sheldon Cooper Chatbot, feel free to fork the repository and make changes to the code. You can also open a pull request to suggest changes or additions to the project.
+1. Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/RimaBuilds/sheldon-chatbot.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd sheldon-chatbot
+```
+
+3. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Set up your OpenAI API key as an environment variable:
+
+```bash
+set OPENAI_API_KEY="your_api_key_here"
+```
+
+Replace `your_api_key_here` with your actual OpenAI API key.
+
+5. Run the Flask application:
+
+```bash
+python app.py
+```
+
+6. Open a web browser and navigate to `http://127.0.0.1:5000/` to access the Sheldon Chatbot interface. Start chatting and enjoy interacting with the chatbot!
+
+## Usage
+
+Once the Sheldon Chatbot is running, you can interact with it by typing your messages in the input field and clicking the "Send" button. The chatbot will respond with messages that resemble Sheldon Cooper's speech style and humor.
+
+To make the chatbot's responses more random, you can adjust the temperature and presence_penalty values in the `generate_response` function within the `app.py` file:
+
+```python
+temperature = 1.0  # Increase this value for more randomness (e.g., 1.5)
+presence_penalty = 0.5  # Decrease this value for more randomness (e.g., 0.3)
+```
+
+Higher temperature values will make the output more diverse and creative, while lower presence_penalty values will encourage the model to use the Sheldon Cooper persona more often. Adjust these values as needed to achieve the desired level of randomness in the chatbot's responses.
+
+After making changes, save the `app.py` file and restart the Flask application to apply the changes.
+
+## Acknowledgments
+
+The background image used in the CSS is created by Midjourney ai.
+The `sheldon.txt` file contains scripts from Sheldon Cooper's episodes in The Big Bang Theory, sourced from the [Big Bang Theory Transcripts](https://bigbangtrans.wordpress.com/) website.
+
+## Contributing
+
+Contributions to the Sheldon Chatbot project are welcome! Please feel free to submit issues, feature requests, and pull requests on GitHub.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
