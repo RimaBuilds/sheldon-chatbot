@@ -73,7 +73,7 @@ The `sheldon.txt` file contains scripts from Sheldon Cooper's episodes in The Bi
 
 ## Contributing
 
-I made this with chatgpt for fun but if you can make it any funnier :P
+I made this with chatgpt for fun but if you are bored like me and can make it funnier go ahead 😜
 
 Contributions to the Sheldon Chatbot project are welcome! Please feel free to submit issues, feature requests, and pull requests on GitHub.
 
