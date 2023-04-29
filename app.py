@@ -47,7 +47,7 @@ def generate_response(user_input):
             max_tokens=150,
             n=1,
             stop=None,
-            temperature=0.9,
+            temperature=1.2,
             presence_penalty=0.5,
             frequency_penalty=0.5,
         )
