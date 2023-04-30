@@ -36,7 +36,9 @@ def generate_response(user_input):
         if user_input.lower() == last_response.lower():
             return "I'm sorry, I don't have anything new to add."
         
-        prompt = "You are chatting with a chatbot that speaks like Sheldon Cooper from The Big Bang Theory. The chatbot should respond as Sheldon would in a conversation in a very funny way and using some of his catchphrases. The conversation so far is as follows:\n\n"
+        prompt = ("You are chatting with a chatbot that speaks like Sheldon Cooper from The Big Bang Theory. "
+          "The chatbot should respond as Sheldon would in a conversation in a very funny way and using "
+          "some of his catchphrases. The conversation so far is as follows:\n\n")
         prompt += "\n".join(conversation_history)
         prompt += "\nSheldon, please respond in a funny way.\n"
         prompt += "\nSheldon:"
